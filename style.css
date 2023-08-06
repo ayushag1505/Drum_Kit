@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./background.jpg);
+    background-size: cover;
+}
+
+main{
+    margin: 40vh 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div{
+    border: 5px solid slateblue;
+    padding: 10px;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: white;
+}
+
+p{
+    font-size: 1rem;
+    color: red;
+    text-transform: uppercase;
+}
+
+div:hover{
+    cursor: pointer;
+}
+
+.clicked{
+    box-shadow: 0px 0px 5px 5px violet;
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width:950px) {
+    main{
+        justify-content: center;
+    }
+}
